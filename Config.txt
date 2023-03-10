@@ -1,6 +1,5 @@
 -Make a config folder
 -Make a file name db.config.js
-
 =======================================
 -Write:
 
@@ -12,4 +11,14 @@ module.exports = {
 
 =======================================
 
+-Also make an auth.config.js file
+=======================================
+-Write:
 
+module.exports = {
+    secret: "AnySecretYouWant",
+    refreshTokenSecret: "AnyRefreshTokenSecretYouWant",
+    tokenLife: 1320, //Time 
+    refreshTokenLife: 435300 //Time
+}
+=======================================
