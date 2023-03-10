@@ -1,0 +1,15 @@
+-Make a config folder
+-Make a file name db.config.js
+
+=======================================
+-Write:
+
+module.exports = {
+    userName: "Your User Name",
+    password: "Your Password",
+    dbName: "Your DB Name in Cluster",
+  };
+
+=======================================
+
+
