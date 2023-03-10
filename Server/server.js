@@ -7,6 +7,8 @@ const config = require("./config/db.config");
 const { mongoose } = require("./models/index");
 
 const userRoutes = require("./routes/user.routes");
+const loginRoutes = require("./routes/login.routes");
+
 
 const corsOptions = {
     origin: "http://localhost:3000",
@@ -16,6 +18,8 @@ app.use(cors(corsOptions));
 app.use(express.json());
 
 app.use(userRoutes);
+app.use(loginRoutes);
+
 mongoose.set("strictQuery", false);
 
 db.mongoose
